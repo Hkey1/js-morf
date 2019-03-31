@@ -1,0 +1,40 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<script src="morf.js" charset="UTF-8"></script>
+Проверка кодировки
+<script>
+	SerpstatMorf.init('ru en').then(function(lib){
+		console.log('has       = ',lib.find('has'));
+		console.log('have      = ',lib.find('have'));
+		console.log('have==has = ',lib.isSameWord('have','has'));
+
+		console.log('квартиры = ',lib.find('квартиры'));
+		console.log('квартир  = ',lib.find('квартир'));
+		console.log('квартира = ',lib.find('квартира'));
+		console.log('квартиру = ',lib.find('квартиру'));
+        
+        console.log(lib.filter([
+                'жилье на сутки',
+                'квартиру на сутки',
+                'аренда квартир посуточно',
+                'аренда жилья посуточно',
+                'аренда квартиры'
+            ],{
+                whiteList:['квартира']
+            }
+        ));
+        console.log(lib.filter([
+                {keyword:'жилье на сутки'},
+                {keyword:'квартиру на сутки'},
+                {keyword:'аренда квартир посуточно'},
+                {keyword:'аренда жилья посуточно'},
+                {keyword:'аренда квартиры'}
+            ],{
+                field     : 'keyword',
+                whiteList : ['квартира'],
+                blackList : ['сутки']
+            }
+        ));
+	});
+</script>
