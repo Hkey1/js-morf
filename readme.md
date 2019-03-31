@@ -9,15 +9,6 @@ Fast English and Russian morfology for node.js and browsers.
 
 # Install
 
-## Node.js
-
-```
-  npm install serpstat-morf
-```
-```javascript
-  var SerpstatMorf = require('serpstat-morf');
-```
-
 ## Browser
 
 ```html
