@@ -111,7 +111,7 @@ var SerpstatMorf = (function(){
                 });            
             } else {//Browser
                 var xhr     = new XMLHttpRequest(); 
-                xhr.open("GET", 'https://utils.serpstat.com/db/'+name, true);
+                xhr.open("GET", 'https://cdn.jsdelivr.net/gh/Hkey1/js-morf/'+name, true);
                 xhr.responseType = "arraybuffer";
                 xhr.onreadystatechange=function(){
                     if(xhr.readyState === 4){

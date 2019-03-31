@@ -21,7 +21,7 @@ Fast English and Russian morfology for node.js and browsers.
 ## Browser
 
 ```html
-   <script src="https://cdn.jsdelivr.net/npm/serpstat-morf/morf.js" charset="UTF-8"></script>
+   <script src="https://cdn.jsdelivr.net/gh/Hkey1/js-morf/morf.js" charset="UTF-8"></script>
 ```
 
 # Usage
