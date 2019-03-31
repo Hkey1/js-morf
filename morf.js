@@ -98,7 +98,7 @@ var SerpstatMorf = (function(){
             var promise = new classes.Promise();
             if(utils.isNode()){//Node.js
                 var fs = require('fs');
-                fs.readFile(__dirname+'/db/'+name,function(err,res){
+                fs.readFile(__dirname+'/'+name,function(err,res){
                     if(err){
                         return promise._cb(err);
                     }
